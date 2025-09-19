@@ -4,15 +4,13 @@ public class BankAccount {
     private String accountNumber;
     private String holderName;
     private double balance;
-    
-    // Constructor
+
     public BankAccount(String accountNumber, String holderName, double balance) {
         this.accountNumber = accountNumber;
         this.holderName = holderName;
         this.balance = balance;
     }
     
-    // Getters
     public String getAccountNumber() {
         return accountNumber;
     }
@@ -27,13 +25,11 @@ public class BankAccount {
     public void setAccountNumber(String AccountNumber){
         this.accountNumber = accountNumber;
     }
-    
-    // Setters
+
     public void setHolderName(String holderName) {
         this.holderName = holderName;
     }
     
-    // Business Methods
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
